@@ -1,9 +1,9 @@
 <?php
 
-class Prodotti {
-    private $nome_prodotto;
-    private $numero_lotto;
-    private $data_scadenza;
+class Prodotto {
+    protected $nome_prodotto;
+    protected $numero_lotto;
+    protected $data_scadenza;
 
     public function __construct($_nome_prodotto, $_numero_lotto, $_data_scadenza)
     {
