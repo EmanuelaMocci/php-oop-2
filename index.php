@@ -13,13 +13,13 @@ $prodotto1 = new Prodotto("Spaghetti", "L4534296", "27-06-2022");
 
 $prodotto2 = new Prodotto("Passata pomodoro", "L6702334", "05-08-2022");
 
-$carta = new Carta("Fabiola", "Caria", 9083767236442829, 356, "04-2025");
+$carta = new Carta(9083767236442829, 356, "04-2025");
 
-echo ("L'utente {$utente2->getNome()} ");
+echo ("L'utente {$utente1->getNome()} ");
 echo ("ha acquistato: {$prodotto2->getNome_prodotto()}. <br>");
 echo ("Il numero della carta inserita è: {$carta->getNumero_carta()}.");
 
 // Aggiunta interazione
-$utente2-> setCarta($carta);
+$utente1-> setCarta($carta);
 
 // var_dump($utente2);
